@@ -1,8 +1,3 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import Greeting from './greeting';
+const foo = 'bar';
+foo.toUpperCase();
 
-ReactDOM.render(
-  <Greeting name='Abhi'/>,
-  document.getElementById('container')
-);
