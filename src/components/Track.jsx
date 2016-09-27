@@ -9,6 +9,7 @@ const Track = (props) => {
       style={Track.styles.li}
       onMouseOver={(e) => { e.target.style.backgroundColor = mouseOverColor; }}
       onMouseOut={(e) => { e.target.style.backgroundColor = mouseOutColor; }}
+      onClick={() => props.playPreview(props.track.preview_url)}
     >
       {props.track.name}
     </li>
@@ -17,6 +18,7 @@ const Track = (props) => {
 
 Track.propTypes = {
   track: React.PropTypes.object.isRequired,
+  playPreview: React.PropTypes.func.isRequired,
 };
 
 Track.styles = {
